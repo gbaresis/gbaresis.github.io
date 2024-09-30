@@ -8,38 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <form class="centered-form" id="dataForm">
-            <h2>Lineups Setter</h2>
+        <form class="centered-form" id="lineupForm">
+            <h2>Lineups setter</h2>
             <div class="input-group">
                 <label for="input1">Opta:</label>
-                <input type="url" id="input1" name="input1" required placeholder="https://example.com">
+                <input type="text" id="input1" name="input1" required>
             </div>
             <div class="input-group">
                 <label for="input2">Novi:</label>
-                <input type="url" id="input2" name="input2" required placeholder="http://example.com">
+                <input type="text" id="input2" name="input2" required>
             </div>
             <button type="submit">Submit</button>
         </form>
     </div>
-
-    <script>
-        // Add event listener to the form
-        document.getElementById('dataForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            
-            // Get the values from the input fields
-            const optaValue = document.getElementById('input1').value;
-            const noviValue = document.getElementById('input2').value;
-            
-            // Simple validation (optional)
-            if (optaValue && noviValue) {
-                alert('ok'); // Show alert when the form is submitted successfully
-            } else {
-                alert('Please enter valid URLs.'); // Alert for empty input
-            }
-        });
-    </script>
-    <script src="script.js"></script>
+    
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
+
 
