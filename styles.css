@@ -27,12 +27,6 @@ body {
 
 .input-group {
     margin-bottom: 15px; /* Space between input fields */
-    position: relative; /* Position relative for the faded background */
-}
-
-.input-group label {
-    display: block; /* Make labels block elements */
-    margin-bottom: 5px; /* Space between label and input */
 }
 
 input[type="text"] {
@@ -41,8 +35,6 @@ input[type="text"] {
     border: 1px solid #ccc; /* Light grey border */
     border-radius: 4px; /* Rounded corners */
     transition: border-color 0.3s; /* Smooth transition for border color */
-    background-color: rgba(255, 255, 255, 0.8); /* Faded white background */
-    position: relative; /* Position relative for the faded background */
 }
 
 input[type="text"]:focus {
@@ -63,4 +55,5 @@ button {
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+
 
