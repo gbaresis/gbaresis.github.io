@@ -12,12 +12,19 @@ document.getElementById("lineupForm").addEventListener("submit", function(event)
     // Open the Opta link in a new tab
     window.open(optaLink, "_blank");
 
-    // You can also use fetch or navigate to the link if needed
-    // However, note that cross-origin issues may arise if you try to fetch data from another domain.
     
-    // Here you would need to execute your code on the newly opened page,
-    // which usually requires browser extensions or user scripts for cross-domain interactions.
-    // For the purpose of demonstration, we are just opening the URL.
+    
+    const playerElements = document.querySelectorAll('.player-cell_playerName__auB9H');
+const players = Array.from(playerElements).map(player => player.textContent.trim());
+
+// Remove the 1st (index 0) and 12th (index 11) elements and remove "(C)" from names
+const updatedPlayers = players
+    .filter((_, index) => index !== 0 && index !== 11)  // Exclude the 1st and 12th players
+    .map(player => player.replace(/\s*\(C\)\s*/g, '')) // Remove "(C)" from names
+    .slice(0, 20); // Limit the list to the first 20 elements
+
+// Print the updated players list
+console.log(updatedPlayers);
 });
 
 // If you want to run the player extraction code after visiting the page,
