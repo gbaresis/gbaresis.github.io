@@ -2,45 +2,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     background-color: #f0f0f0; /* Light grey background for the entire page */
-    margin: 0;
+    margin: 0; /* Remove default margin */
 }
 
 .container {
-    background-color: #ffffff; /* White background for the form container */
-    padding: 30px;
-    border-radius: 8px;
+    background-color: #e7f0ff; /* Light blue background */
+    padding: 30px; /* Spacing inside the container */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    width: 300px; /* Set a fixed width for the form */
-    text-align: center; /* Center text within the form */
+    width: 300px; /* Fixed width */
+    text-align: center; /* Center text */
 }
 
 h2 {
-    margin-bottom: 20px; /* Space below the heading */
-    color: #333333; /* Dark grey color for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #333333; /* Dark gray color for the heading */
 }
 
 .input-group {
-    margin-bottom: 20px; /* Space between input groups */
+    margin-bottom: 20px; /* Spacing between input groups */
 }
 
 .input-group label {
-    display: block; /* Make labels block elements */
-    margin-bottom: 5px; /* Space between label and input */
-    color: #555555; /* Medium grey color for labels */
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Spacing below the label */
+    color: #555555; /* Medium gray color for the label */
 }
 
 input[type="text"] {
-    width: calc(100% - 20px); /* Full width input fields, accounting for padding */
-    padding: 10px;
-    border: 1px solid #cccccc; /* Light grey border */
-    border-radius: 4px; /* Rounded corners */
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Inner padding for input */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for input */
     transition: border-color 0.3s; /* Smooth transition for border color */
-    background-color: #fafafa; /* Light background for inputs */
-    font-size: 16px; /* Font size for inputs */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    margin: 0 auto; /* Center the input field */
+    background-color: #fafafa; /* Light background for input */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 input[type="text"]:focus {
@@ -49,20 +48,20 @@ input[type="text"]:focus {
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #007BFF; /* Blue button */
+    padding: 10px 15px; /* Padding for button */
+    background-color: #007BFF; /* Blue background for button */
     color: white; /* White text color */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size for button */
     transition: background-color 0.3s; /* Smooth transition for background color */
-    width: 100%; /* Button full width */
 }
 
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+
 
 
 
