@@ -1,66 +1,78 @@
-body {
+body, html {
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #f0f0f0; /* Light grey background for the entire page */
-    margin: 0; /* Remove default margin */
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: #e7f0ff; /* Light blue background */
-    padding: 30px; /* Spacing inside the container */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    width: 300px; /* Fixed width */
-    text-align: center; /* Center text */
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-h2 {
-    margin-bottom: 20px; /* Spacing below the heading */
-    color: #333333; /* Dark gray color for the heading */
+.container::before {
+    content: "Event ID";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    pointer-events: none;
 }
 
-.input-group {
-    margin-bottom: 20px; /* Spacing between input groups */
+form {
+    position: relative;
+    z-index: 2;
 }
 
-.input-group label {
-    display: block; /* Make label a block element */
-    margin-bottom: 5px; /* Spacing below the label */
-    color: #555555; /* Medium gray color for the label */
+label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
 }
 
 input[type="text"] {
-    width: calc(100% - 20px); /* Full width minus padding */
-    padding: 10px; /* Inner padding for input */
-    border: 1px solid #cccccc; /* Light gray border */
-    border-radius: 4px; /* Rounded corners for input */
-    transition: border-color 0.3s; /* Smooth transition for border color */
-    background-color: #fafafa; /* Light background for input */
-    font-size: 16px; /* Font size */
-    box-sizing: border-box; /* Include padding in width */
-}
-
-input[type="text"]:focus {
-    border-color: #007BFF; /* Blue border on focus */
-    outline: none; /* Remove outline */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 button {
-    padding: 10px 15px; /* Padding for button */
-    background-color: #007BFF; /* Blue background for button */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size for button */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
+
+#output {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 
 
