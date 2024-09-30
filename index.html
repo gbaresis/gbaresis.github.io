@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Form</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <title>Baresis Tools</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
     <div class="container">
-        <form class="centered-form" id="lineupForm">
-            <h2>Lineups setter</h2>
-            <div class="input-group">
-                <label for="input1">Opta:</label>
-                <input type="text" id="input1" name="input1" required>
-            </div>
-            <div class="input-group">
-                <label for="input2">Novi:</label>
-                <input type="text" id="input2" name="input2" required>
-            </div>
+        <form id="eventForm">
+            <label for="eventId">Event ID:</label>
+            <input type="text" id="eventId" name="eventId" placeholder="Enter event ID" required>
             <button type="submit">Submit</button>
         </form>
+        <div id="output"></div> <!-- This is where the event ID will be displayed -->
     </div>
-    
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>
+
 
 
