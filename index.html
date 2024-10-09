@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baresis Tools</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Duplicate Event Checker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
 </head>
 <body>
     <div class="container">
-        <form id="eventForm">
-            <label for="eventId">Event ID:</label>
-            <input type="text" id="eventId" name="eventId" placeholder="Enter event ID" required>
+        <h1>Enter URL to Check for Duplicate Events</h1>
+        <form id="urlForm">
+            <input type="text" id="urlInput" placeholder="Enter URL here" required>
             <button type="submit">Submit</button>
         </form>
-        <div id="output"></div> <!-- This is where the event ID will be displayed -->
+        <div id="resultMessage" class="result-message"></div> <!-- Message display -->
     </div>
 
-    <script src="script.js"></script> <!-- Link to external JS file -->
+    <script src="script.js"></script> <!-- Link to JavaScript -->
 </body>
 </html>
+
 
 
 
