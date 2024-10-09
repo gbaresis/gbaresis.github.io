@@ -1,76 +1,50 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0f7fa;
+body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh; /* Full height to center the content vertically */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0; /* Remove default margin */
 }
 
-.container {
-    position: relative;
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.container::before {
-    content: "Event ID";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    color: rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    pointer-events: none;
+h1 {
+    color: #333;
+    text-align: center; /* Center text */
 }
 
 form {
-    position: relative;
-    z-index: 2;
+    margin-top: 20px;
+    text-align: center; /* Center form elements */
 }
 
-label {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-input[type="text"] {
-    width: 100%;
+input {
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    width: 300px;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 10px 15px;
     border: none;
-    color: white;
-    font-size: 1rem;
     border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-#output {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #007bff;
-    font-weight: bold;
-    text-align: center;
+.result-message {
+    margin-top: 20px; /* Space between button and message */
+    text-align: center; /* Center the message */
+    color: #333;
+    font-weight: bold; /* Make message bold */
 }
 
 
