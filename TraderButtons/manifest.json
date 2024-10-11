@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Trader Buttons",
+    "version": "1.0",
+    "description": "Adds trader tools buttons to Novibet's Live-Betting Page.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://www.novibet.gr/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.novibet.gr/en/live-betting/*",
+                "https://www.novibet.gr/stoixima-live/*"
+            ],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ]
+}
+
+
+  
