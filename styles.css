@@ -1,3 +1,11 @@
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fills the space */
+    margin-right: 20px;
+}
+
 .contact-info p {
     display: flex;
     align-items: center;
@@ -8,11 +16,12 @@
     margin-right: 8px;
 }
 
-a {body {
+/* Fixed body styles */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light color background */
+    background-color: #f0f0f0; /* Light background */
 }
 
 .container {
@@ -27,13 +36,6 @@ a {body {
 header {
     display: flex;
     align-items: center;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
 }
 
 .personal-info h1, .personal-info p {
@@ -52,6 +54,7 @@ header {
     margin-top: 10px;
 }
 
+a {
     color: #0073b1; /* LinkedIn blue */
     text-decoration: none;
 }
@@ -63,7 +66,7 @@ a:hover {
 button {
     background-color: #6A5ACD;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -78,7 +81,7 @@ h2, h3 {
     margin-top: 30px;
 }
 
-.novi-project-section, .cv-section, .thesis-section {
+.cv-section, .thesis-section {
     margin-top: 20px;
 }
 
@@ -90,9 +93,9 @@ h2, h3 {
     margin-left: 8px;
 }
 
-/* Additional styles for mini-project section background */
+
 .mini-projects-section {
-    background-color: #f0f0f0;
+    background-color: #EAE4DD; 
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
