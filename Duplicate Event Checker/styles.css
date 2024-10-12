@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh; /* Full height to center the content vertically */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    color: #333;
+    text-align: center; /* Center text */
+}
+
+form {
+    margin-top: 20px;
+    text-align: center; /* Center form elements */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-message {
+    margin-top: 20px; /* Space between button and message */
+    text-align: center; /* Center the message */
+    color: #333;
+    font-weight: bold; /* Make message bold */
+}
