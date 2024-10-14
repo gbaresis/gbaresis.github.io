@@ -101,7 +101,7 @@ h2, h3 {
     margin-top: 30px;
 }
 
-.grid-container {
+.mini-projects-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
